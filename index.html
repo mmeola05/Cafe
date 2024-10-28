@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CAFE</title>
+	<style>
+		body{
+			background-color:#CCCC66;
+            font-family: Arial, Helvetica, sans-serif;
+		}
+		header{
+			width: 100%;
+		}
+		header img{
+			margin-left: 80px;
+		}
+		iframe{
+			height: 100%;
+			width: 100%;
+		}
+		.container{
+			display: flex;
+			min-height: 80vH;
+		}
+		.navegador{
+			width: 15%;
+			height: 100%;
+            
+		}
+        .lista{
+            background-color: #6f6f33;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            line-height: 30px;
+        }
+		.container{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="./img/logo.gif" alt="logo cafe">
+		<img src="./img/banner.gif" alt="banner cafe">
+	</header>
+	<main class="container">
+		<div class="navegador">
+			<div class="lista">
+                <ul>
+                    <li>
+                        <a href="./pages/inicial.html" target="iframe">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/cultivo.html" target="iframe">
+                            Cultivo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/tipos.html" target="iframe">
+                            Tipos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/preparacion.html" target="iframe">
+                            Preparación
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html" target="iframe">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+			<img src="./img/fotos.png" alt="portada fotos">
+		</div>
+		<div class="container">
+			<iframe src="./pages/inicial.html" name="iframe"></iframe>
+		</div>
+	</main>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+        }
+        header div{
+            padding: 10px;
+            align-self: center;
+        }
+        h1{
+            margin: 0;
+            color: darkred;
+        }
+        p{
+            color: red;
+        }
+        input, textarea{
+            border: 1px solid red;
+        }
+        .destacar{
+            color: darkred;
+        }
+        .text-normal{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../img/grano.gif" alt="Grano">
+        </div>
+        <h1>Contacto</h1>
+    </header>
+    <hr>
+    <main>
+        <p class="destacar">
+            Si deseas ponerte en contacto con nosotros rellena este formulario y te contestaremos a la mayor brevedad posible
+        </p>
+
+        <form name="contact" method="get">
+            <p>
+                <label for="nom"><strong>Nombre*:</strong></label>
+                <input type="text" name="nom" id="nom" autofocus required>
+            </p>
+            <p class="destacar">
+                <label for="apell">Apellidos: </label>
+                <input type="text" name="apell" id="apell">
+            </p>
+            <p>
+                <label for="email"><strong>Correo Electrónico*:</strong> </label>
+                <input type="email" name="email" id="email" required pattern="\w+@\w+\.(com|es)">
+            </p>
+            <p>
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" name="edad" min="18" max="99">
+            </p>
+            <p class="destacar">
+                ¿Cuántas tazas de café tomas al día?
+            </p>
+            <p class="destacar">
+                <input type="radio" name="cantCaf" id="uno_dos" checked>
+                <label for="uno_dos">1 o 2</label>
+                <input type="radio" name="cantCaf" id="dos_cinco">
+                <label for="dos_cinco">2-5</label>
+                <input type="radio" name="cantCaf" id="mas_cinco">
+                <label for="mas_cinco">Más de 5</label>
+            </p>
+            <p class="destacar">
+                ¿Cómo te gusta preparar el café?
+            </p>
+            <p>
+                <select name="preparar" id="preparar">
+                    <option value="" disabled selected>Formas de preparar café</option>
+                    <option value="bombon">Bombón</option>
+                    <option value="solo">Solo</option>
+                    <option value="tiempo">Del Tiempo</option>
+                </select>
+            </p>
+            <p class="destacar">
+                ¿Qué café te gusta más?
+            </p>
+            <p>
+                <select name="gusto" id="gusto" multiple size="3">
+                    <option>Arabica</option>
+                    <option>Robusta</option>
+                    <option>Caracolillo</option>
+                </select>
+            </p>
+            <p class="destacar">
+                ¿Cuántos minutos pasas tomándote el café?
+            </p>
+            <p class="text-normal">
+                0
+                <input type="range" min="0" max="60" name="horas">
+                60
+            </p>
+            <p class="destacar">
+                ¿Cómo nos has encontrado?
+            </p>
+            <p>
+                <input type="text" name="encontrado" list="sugerencias">
+            </p>
+            <p class="destacar">
+                Comentario:
+            </p>
+            <p>
+                <textarea name="comentario" rows="4" cols="50" minlength="20" maxlength="200"></textarea>
+            </p>
+            <p>
+                <strong>(Los campos con asterisco (*) son obligatorios)</strong>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+    <datalist id="sugerencias">
+        <option>Anuncio de televisión</option>
+        <option>Buscadores</option>
+        <option>Un amigo</option>
+    </datalist>
+</body>
+</html>

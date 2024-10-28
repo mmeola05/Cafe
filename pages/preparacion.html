@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preparación</title>
+    <style>
+      #container {
+        display: flex;
+      }
+      main {
+        width: 50%;
+      }
+      aside {
+        width: 50%;
+      }
+      h3 {
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h3>Vídeo Youtube</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/e44MyMrsZmk?si=ISyVLrvsxxrhYNzi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h3>Video</h3>
+        <video controls loop autoplay>
+          <source src="../media/video_cafe_yt.mp4" type="video/mp4" />
+          <source src="../media/video_cafe_yt_form.ogv" type="video/ogg" />
+        </video>
+        <h3>Carrousel</h3>
+        <script
+          src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js"
+          async
+        ></script>
+        <div
+          class="pa-carousel-widget"
+          style="width: 100%; height: 480px; display: none"
+          data-link="https://photos.app.goo.gl/HiZLhzU9pHPuqss86"
+          data-title="Sin título"
+          data-description="6 new items added to shared album"
+        >
+          <object
+            data="https://lh3.googleusercontent.com/pw/AP1GczOLa99PCF-pEqIqz6gxjfeJFvqr1nkMldB50DevbC_enaZ0oxF6dLomS8nY1Nm0w9P7ADUmOylzNeyVle_neksgJLqx6St-blqkrbyHBLQgixmPfw0=w1920-h1080"
+          ></object>
+          <object
+            data="https://lh3.googleusercontent.com/pw/AP1GczNda33FlMoJPkxq-4Iw903qIOWDnaaOFd5GpQ0bQgiCtg30g42QLp099U-8qhCpzJpvO1thOYpQWhRgGO6wwmfyoOZz-Ap9UIljjoDpGnRxgxX5Da8=w1920-h1080"
+          ></object>
+          <object
+            data="https://lh3.googleusercontent.com/pw/AP1GczPoMGl-dd0qqWcmCVKNyFmLu4F0_mIO4oLp8oEHMc639jTjUtQSvcqxY7Rj_ta_bvg7PBfoKXUg7OnVROI7cvVlp1HgipxP5axoFEgAHugGPRvOqXA=w1920-h1080"
+          ></object>
+          <object
+            data="https://lh3.googleusercontent.com/pw/AP1GczPLyFQzcglYZ4RkKwpQiVXwqETS3wy753_iMyls31oXxug3rdZ_OtzhsHboiCuFGqNBQT8WOeonRBrMvNa2pmzAPvZSid2n9OMjDuocFMiSh2ymGus=w1920-h1080"
+          ></object>
+          <object
+            data="https://lh3.googleusercontent.com/pw/AP1GczPJt3D4e-BOgzn0btN4zD0QtoBKhaPrUBpt5bMHsVZXMp38oZe0ZrXvQBW2YSCUVdnSUA34xMUzOREQTfqDoxg0ybi0VfKL39f84f9fpPRGbeKop9w=w1920-h1080"
+          ></object>
+          <object
+            data="https://lh3.googleusercontent.com/pw/AP1GczPiUNEhTxGK83tS8VujF6O-COzcjsPyBJgRB93X1c3XGOU8B8CbnX27zjR4UEyiX36H10eqR4mv8mItfgyxDxPhmqHApXIinRYQkAO6Q4e-bwIByX0=w1920-h1080"
+          ></object>
+        </div>
+
+        <div>
+          <h3>Noticias</h3>
+          <script
+            src="https://static.elfsight.com/platform/platform.js"
+            async
+          ></script>
+          <div
+            class="elfsight-app-77ae515e-66ed-4066-9a93-18fe94e1006e"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+      </main>
+      <aside>
+         <!-- Widget de ubicación de sede en Bogotá usando Google Maps -->
+        <!-- Fuente: Google Maps Embed API -->
+        <h3>Ubicación de Café de Colombia en Bogotá - Google Maps</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5279781646644!2d-74.08359382574323!3d4.67745729656948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a8cd9b1e9b9%3A0x64f3f1c98e1e6c48!2sCaf%C3%A9%20de%20Colombia!5e0!3m2!1ses!2sco!4v1615551622594!5m2!1ses!2sco" 
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <!-- Widget de ubicación de sede en Bogotá usando Bing Maps -->
+        <!-- Fuente: Bing Maps Embed -->
+        <h3>Ubicación de Café de Colombia en Bogotá - Bing Maps</h3>
+        <iframe src="https://www.bing.com/maps/embed?h=300&w=500&cp=4.6775~-74.0836&lvl=15&typ=d&sty=r&src=SHELL&FORM=MBEDV8" 
+                width="100%" height="300" scrolling="no"></iframe>
+
+       <!-- Widget del tiempo en Bogotá usando Meteoblue -->
+        <!-- Fuente: Meteoblue -->
+        <h3>El Tiempo en Bogotá</h3>
+        <iframe src="https://www.meteoblue.com/es/tiempo/widget/daily/bogot%C3%A1_colombia_3688689?geoloc=fixed&days=7&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&colourscheme=bright" 
+                width="100%" height="300" style="border:none;" scrolling="no"></iframe>
+
+        <!-- Widget de calendario de Google Calendar -->
+        <!-- Fuente: Google Calendar Embed -->
+        <h3>Calendario del mes actual</h3>
+        <iframe src="https://calendar.google.com/calendar/embed?src=tu_calendario%40gmail.com&ctz=America%2FBogota" 
+                style="border: 0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+
+        <!-- Widget de marcadores deportivos o valores bursátiles -->
+        <!-- Fuente: TradingView -->
+        <h3>Marcadores deportivos o valores bursátiles</h3>
+        <iframe src="https://s.tradingview.com/embed-widget/symbol-overview/?locale=es#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22COLCAP%22%2C%22proName%22%3A%22BCS%3ACOLCAP%22%7D%5D%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22largeChartUrl%22%3A%22%22%2C%22showSymbolLogo%22%3Atrue%2C%22width%22%3A%22%22%2C%22height%22%3A%22%22%2C%22locale%22%3A%22es%22%7D" 
+                width="100%" height="300" frameborder="0"></iframe>
+
+      </aside>
+    </div>
+  </body>
+</html>
